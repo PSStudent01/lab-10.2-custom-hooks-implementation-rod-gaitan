@@ -13,7 +13,7 @@ function usePagination(totalItems, itemsPerPage = 10, initialPage = 1) {
 
     // to jump to a specific page number.
     const setPage = (pageNumber) => {
-        setCurrentPage(pageNumber);  
+        setCurrentPage(pageNumber);
     };
 
     // calculates what page is next
@@ -39,17 +39,17 @@ function usePagination(totalItems, itemsPerPage = 10, initialPage = 1) {
     const canPrevPage = currentPage > 1;
 
     return {
-    currentPage,
-    totalPages,
-    startIndex,
-    endIndex,
-    itemsOnCurrentPage,
-    setPage,
-    nextPage,
-    prevPage,
-    canNextPage,
-    canPrevPage,
-}
+        currentPage,
+        totalPages,
+        startIndex,
+        endIndex,
+        itemsOnCurrentPage,
+        setPage,
+        nextPage,
+        prevPage,
+        canNextPage,
+        canPrevPage,
+    }
 
 }
 
