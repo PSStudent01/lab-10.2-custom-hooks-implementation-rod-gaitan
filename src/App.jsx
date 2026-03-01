@@ -1,7 +1,7 @@
 
 
 import Pagination from './components/PaginationDemo'
-import DebounceSearch from './components/DebounceSearchDemo'
+//import DebounceSearch from './components/DebounceSearchDemo'
 import './App.css'
 
 function App() {
@@ -16,12 +16,16 @@ function App() {
 
         <hr></hr>
 
-        <section>
-        <h2>DebounceSearch</h2>
-        <DebounceSearch />
-        </section> 
+
     </div>
   )
 }
 
 export default App
+
+/* 
+        <section>
+        <h2>DebounceSearch</h2>
+        <DebounceSearch />
+        </section> 
+*/

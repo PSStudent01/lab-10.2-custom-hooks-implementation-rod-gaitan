@@ -114,24 +114,29 @@ function PaginationDemo(){
     prevPage,
     canNextPage,
     canPrevPage,
-  } = usePagination(items.length, 10, 1);
+  } = usePagination(autoMakeModel.length, 10, 1);
+
+   const currentItems = autoMakeModel.slice(startIndex, endIndex);
 
   return(
        <div>
-        <h3>Pokémon Pagination</h3>
-
+        <h3>Automobile Pagination</h3>
 
         <ul>
-        {autoMakeModel.map((auto) => (
+        {currentItems.map((auto) => (
           <li key={auto}>{auto}</li>
         ))}
         </ul>
 
+        <div>
+            <button onClick={prevPage} disabled={!canPrevPage}>Previous</button>
+            <button onClick={nextPage} disabled={!canNextPage}>Next</button>
+        </div>
 
+        <p>Page {currentPage} of {totalPages}</p>
     </div>
   )
 
-
-
-
 }
+
+export default PaginationDemo;
