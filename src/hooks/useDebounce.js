@@ -7,14 +7,27 @@ const [debouncedValue, setDebouncedValue] - useState(value)
 
 useEffect(() => {
 
+    setTimeout( () => {
 
+        setDebouncedValue(value);
+    }
+
+
+    )
 
 }
 
 
 return () => {
 
+
+
   }, [value, delay]);
+
+
+
+
+
 
 
   return debouncedValue
